@@ -1,0 +1,123 @@
+
+/* styles for mobile  */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+body{
+background-color: white;
+
+}
+#container{
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+header{
+  margin-top: 0.2em;
+  background-color: white;
+  border-radius: 0.5em;
+  text-align: center;
+}
+
+
+
+nav{
+  font-family: Georgia;
+  font-size: 1.25em;
+  font-weight: bold;
+  text-align: center;
+
+}
+nav ul{
+  padding: 0;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+
+}
+nav li{
+  background-color: #009933;
+  border-radius: 2em;
+  list-style-type: none;
+  margin: 0.3em;
+  padding: 0.4em;
+}
+nav li a{
+  color: white;
+  text-decoration: none;
+}
+
+/* add style to mobile class */
+.mobile{
+
+display: inline;
+}
+
+.desktop{
+  display: none;
+}
+
+main{
+  display: block;
+  font-family: Verdana , Arial , sans-serif;
+  font-size: 1em;
+  margin-top: 0.5em;
+  padding: 1em;
+  border-top: 0.2em solid yellow;
+  border-bottom: 0.2em solid yellow;
+  background-color: white;
+
+}
+
+footer{
+  font-size: 0.7em;
+  text-align: center;
+  margin-top: 2em;
+
+}
+h1{
+  clear: left;
+}
+
+.tablet{
+  display: none;
+}
+
+
+.equip{
+display: none;
+
+}
+
+#list{
+  padding-left: 10px;
+}
+
+ul{
+  margin-bottom: 50px;
+  list-style-position: inside;
+}
+
+dt{
+  font-weight: bold;
+
+}
+
+dd{
+  margin-bottom: 20px;
+
+}
+img{
+  max-width: 100%;
+}
