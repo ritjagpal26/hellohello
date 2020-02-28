@@ -1,123 +1,182 @@
-
-/* styles for mobile  */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 body{
-background-color: white;
-
+  background-color: #FFFF99;
 }
-#container{
+#container
+{
   width: 100%;
   margin-left: auto;
   margin-right: auto;
 }
-
 header{
   margin-top: 0.2em;
-  background-color: white;
-  border-radius: 0.5em;
+  margin-bottom: 0.4em;
+  background-color: #FFFFFF;
+  border-radius: 0.4em;
   text-align: center;
+  /* box-shadow: 12px 5px 30px #404040; */
 }
-
-
-
 nav{
-  font-family: Georgia;
+  font-family: Georgia, "Times New Roman", sans-serif;
   font-size: 1.25em;
   font-weight: bold;
+  color: #FFFFFF;
   text-align: center;
-
+  padding: 0.5em;
+  /* background-color: #F95782; */
 }
+/* style for ui in nav*/
 nav ul{
   padding: 0;
-  margin-top: 0.5em;
-  margin-bottom: 0.5em;
-
+  margin-top: 0.3em;
 }
 nav li{
-  background-color: #009933;
-  border-radius: 2em;
-  list-style-type: none;
   margin: 0.3em;
-  padding: 0.4em;
+  padding: 0.2em;
+  background-color: #009933;
+  border-radius: 1em;
+  list-style-type: none;
 }
 nav li a{
-  color: white;
+  color: #FFFFFF;
   text-decoration: none;
-}
-
-/* add style to mobile class */
-.mobile{
-
-display: inline;
-}
-
-.desktop{
-  display: none;
-}
-
-main{
-  display: block;
-  font-family: Verdana , Arial , sans-serif;
-  font-size: 1em;
-  margin-top: 0.5em;
-  padding: 1em;
-  border-top: 0.2em solid yellow;
-  border-bottom: 0.2em solid yellow;
-  background-color: white;
-
-}
-
-footer{
-  font-size: 0.7em;
-  text-align: center;
-  margin-top: 2em;
-
-}
-h1{
-  clear: left;
-}
-
-.tablet{
-  display: none;
-}
-
-
-.equip{
-display: none;
-
-}
-
-#list{
-  padding-left: 10px;
-}
-
-ul{
-  margin-bottom: 50px;
-  list-style-position: inside;
-}
-
-dt{
-  font-weight: bold;
-
-}
-
-dd{
-  margin-bottom: 20px;
-
 }
 img{
   max-width: 100%;
 }
+main{
+  background-image:url("beach.jpg");
+  display: block;
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 1em;
+  margin-top: 0.4em;
+  padding: 0.3em;
+  color: #FFFFFF;
+  line-height: normal;
+  border-radius: 1em;
+  background-color: #FF9980;
+  border-top: solid 0.3em #009933;
+  border-bottom: solid 0.3em #009933;
+}
+.tablet{
+  display: none;
+}
+main p
+{
+  font-size: 1em;
+}
+.mobile{
+  display: inline;
+}
+.desktop
+{
+  display: none;
+}
+footer{
+  font-size: 0.7em;
+  text-align: center;
+  margin-top: 2em;
+}
+.equip
+{
+  display: none;
+  float: left;
+  margin-right: 20px;
+}
+h1{
+  margin-left: 10px;
+  color: lightyellow;
+}
+p , dd {
+  margin-top: 10px;
+  font-size: 20px;
+}
+li {
+  align-items: center;
+  font-size: 23px;
+  font-family: Rockwell;
+}
+dt{
+font-weight: bold;
+margin-top: 10px;
+  font-size: 24px;
+  color: yellow;
+}
+/* media query for the tablet view port targets screen only */
+@media only screen and (min-width: 685px) {
+  /* Styles specifies the horizontal display for the nav list*/
+  nav li
+  {
+    display: inline;
+    float: left;
+margin-left: 1%;
+margin-right: 1%;
+padding-left: 0%;
+padding-right: 0%;
+width: 18%;
+white-space: nowrap;
+ }
+ .mobile{
+   display: none;
+ }
+ .desktop{
+   display: none;
+ }
+ .equip
+ {
+   display: inline;
+   float: left;
+   margin-right: 1.5em;
+ }
+ .items
+ {
+   display: block;
+   list-style-position: inside;
+   margin-bottom: 5em;
+ }
+ .tablet
+ {
+   display: block;
+ }
+}
+@media only screen and (min-width: 769px){
+#container{
+  width: 80%;
+}
+/* styles for ul in nav */
+nav ul{
+  margin: 0;
+  padding-left:  0.5%;
+  padding-right: 0.5%;
+}
+/*style for the li in nav*/
+nav li{
+  border-radius: 0;
+  border-top: solid #000000;
+  border-bottom: solid #000000;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 0;
+  width: 20%;
+}
+/*styles for the links in the nav*/
+nav li a{
+  display: inline-block;
+  padding: 0.7em;
+}
+/*styles for the main element*/
+main {
+  border-style: none;
+  box-shadow: 0.5em 0.5em 0.5em #404040;
+  margin-bottom: 1em;
+  margin-top: 1em;
+}
+/*styles for the  paragraphs inside main element*/
+main p{
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+}
+/*styles for item class*/
+.item{
+  margin-bottom: 0.6em;
+}
+/* adding pusodo class for lonks  */
